@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de dados</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            margin: auto auto;
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: black;
+            padding: 20px;
+            margin-top: 4%;
+            width: 60%;
+            border-radius: 9px;
+        }
+        form h2 {
+            color: white;
+        }
+        form input{
+            line-height: 2.5;
+        }
+        form input[type="submit"]{
+            background-color: rgb(213, 243, 213);
+            color: black;
+            border-radius: 9px;
+            padding: 1px;
+            font-size: x-large;
+        }
+        form input[type="submit"]:hover{
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            background-color: rgb(67, 212, 53);
+            color: antiquewhite;
+            text-shadow: 1px 1px 0px black;
+            transform:translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <form action="php.php" method="get">
+        <h2> Formulário de Contato: </h2>
+        <input type="text" name="nome" placeholder="preencha seu nome">
+        <input type="email" name="email" placeholder="preencha seu Email">
+        <input type="text" name="assunto" placeholder="preencha assunto">
+        <textarea name="msg" rows="5" placeholder="sua mensagem aqui..."></textarea>
+        <input type="submit" name="botao" value="Enviar Dados">
+    </form>
+</body>
+</html>
